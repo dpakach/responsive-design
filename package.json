@@ -22,6 +22,8 @@
     "//": "auto prefix the css files",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.concat.css -o css/style.prefix.css",
     
+    "prefix-dev:css": "postcss --use autoprefixer -b 'last 10 versions' html_files/style.css -o html_files/style.css",
+
     "//": "compress the prefixed file to a .min file",
     "compress:css": "node-sass css/style.prefix.css css/style.min.css --output-style compressed",
     

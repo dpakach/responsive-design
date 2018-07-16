@@ -18,12 +18,18 @@ $color-blue-lightest:   #cad7e0;
 $color-blue-light:      #406e8e;
 $color-blue-dark:       #161925;
 
+//RED
+$color-red-lightest:#f14a78;
+$color-red-light: #f0386b;
+$color-red-dark:#db3362; 
+
 // GREY
 $color-grey-dark-1:#333;
 $color-grey-dark-2:#555;
 $color-grey-dark-3:#777;
 $color-grey-dark-4:#999;
 
+$color-grey-light: #fcfcfc;
 $color-grey-light-1: #f6f6f6;
 $color-grey-light-2: #eee;
 $color-grey-light-3: #ccc;
@@ -40,3 +46,8 @@ $gutter-horizontal: 6rem;
 
 //font
 $default-font-size: 1.6rem;
+
+$nav-height: 6rem;
+$body-height: calc(100vh-6rem);
+
+$box-shadow-small: 0 -0.1rem 1rem 0.1rem rgba($color-black, 0.3);

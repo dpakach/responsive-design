@@ -1,0 +1,55 @@
+.tabs {
+    margin: .5rem auto;
+    width: 95%;
+
+    &__header {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+        background-color: $color-grey-light-2;
+    }
+
+    &__tab {
+        text-align: center;
+        font-weight: 300;
+        font-size: 2rem;
+        border: 1px solid $color-grey-light-3;
+        border-radius: 2px;
+        transition: all .3s ease;
+
+        &:hover {
+            background-color: rgba($color-grey-light, .2);
+        }
+
+        &--active {
+            background-color: $color-grey-light;
+            font-weight: 500;
+            border: none;
+            border-top: 1px solid $color-grey-light-3;
+            &:last-child{
+                border-right: 1px solid $color-grey-light-3;
+            }
+            &:first-child{
+                border-left: 1px solid $color-grey-light-3;
+            }
+            
+        }
+    }
+
+    &__body {
+        background-color: $color-grey-light;
+        padding: .5rem;
+        border-bottom: 1px solid $color-grey-light-3;
+        border-left: 1px solid $color-grey-light-3;
+        border-right: 1px solid $color-grey-light-3;
+    }
+
+    &__content {
+        // background-color: red;
+    }
+
+    &--login {
+        display: grid;
+        grid-template-columns: minmax(20rem, 50rem);
+
+    }
+}

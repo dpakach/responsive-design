@@ -7,4 +7,10 @@
 @import 'base/typography';
 @import 'base/utilities';
 
+@import 'components/list';
+@import 'components/card';
+@import 'components/tab';
+
 @import 'layout/navigation';
+@import 'layout/dashboard';
+@import 'layout/sections';
