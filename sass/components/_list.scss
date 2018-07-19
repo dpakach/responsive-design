@@ -10,7 +10,7 @@
 }
 .list-item {
   // background-color: red;
-  font-size: 2rem;
+  font-size: 1rem;
   padding: 0.5rem 0;
   transition: all 0.3s;
   // background-color: orangered;
@@ -23,17 +23,16 @@
   }
 
   &__title {
+    font-size: 1.5rem;
     font-weight: 700;
     color: rgba($color-navy-light, 0.7);
   }
 
   &__description {
     color: $color-grey-light-3;
-    font-size: 1rem;
   }
 
   &__content {
-    font-size: 1.3rem;
   }
 
   &__facts {
@@ -132,7 +131,7 @@
 }
 
 .fact {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin: 0;
   display: flex;
   justify-content: space-evenly;

@@ -47,7 +47,10 @@ $gutter-horizontal: 6rem;
 //font
 $default-font-size: 1.6rem;
 
-$nav-height: 6rem;
-$body-height: calc(100vh-6rem);
+$nav-height: 4rem;
+$body-height: calc(100vh-4rem);
 
 $box-shadow-small: 0 -0.1rem 1rem 0.1rem rgba($color-black, 0.3);
+
+
+$sidebar-width: 25rem;

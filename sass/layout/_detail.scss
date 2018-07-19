@@ -1,4 +1,4 @@
-.dashboard {
+.detail {
   height: 100%;
   @include respond(tab-port) {
     // background-color: red;
@@ -27,7 +27,6 @@
 
     @include respond(tab-port) {
       width: 100%;
-      padding-left: $sidebar-width + 1rem;
       top: $nav-height;
     }
   }
@@ -35,7 +34,6 @@
   &__back {
     max-width: 100%;
     height: 60%;
-    overflow: hidden;
     // background-image: url(images/test.jpg);
 
     background-attachment: fixed;
@@ -69,18 +67,19 @@
       box-shadow: none;
       margin-top: 8vh;
       margin-bottom: 0;
-      width: $sidebar-width;
+      width: 40rem;
       top: 0;
       left: 0;
     }
   }
 
   &__card {
-    height: 35%;
-    max-width: 60rem;
+    // max-height: 35%;
+    max-width: 90rem;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem;
 
     .facts {
       padding-top: 1rem;

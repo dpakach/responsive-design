@@ -18,7 +18,7 @@
 
   &__title {
     display: none;
-    font-size: 3rem;
+    font-size: 2rem;
     margin: auto 1rem;
     color: $color-grey-light;
 
@@ -33,7 +33,7 @@
     // font-size: 1rem;
     margin: 0 auto;
     // border-radius: 50%;
-    margin-top: .7rem;
+    margin-top: .4rem;
     // color: $color-white;
 
     &:hover {
@@ -41,7 +41,7 @@
     }
 
     @include respond(tab-port){
-      margin: auto .5rem auto auto;
+      margin: auto 0rem auto auto;
     }
   }
 
@@ -99,12 +99,11 @@
   }
 
   &__label {
-    font-size: 1.2rem;
-    margin-bottom: .3rem;
+    font-size: 1rem;
     // display: none;
 
     @include respond(tab-port){
-      font-size: 2rem;
+      font-size: 1.5rem;
       text-align: left;
     }
   }

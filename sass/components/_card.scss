@@ -1,6 +1,6 @@
 .card {
   // margin: 1rem;
-  border-radius: 1rem;
+  border-radius: .5rem;
   // box-shadow: 0 0 0.5rem rgba($color-black, 0.5);
   border: 1px solid $color-grey-light-3;
   background-color: $color-grey-light;
@@ -8,11 +8,9 @@
   // padding: 1rem;
 
   &__header {
-    font-size: 2rem;
     border-bottom: 1px solid $color-grey-light-3;
   }
   &__heading {
-    font-size: 2rem;
     text-align: center;
   }
 
@@ -20,14 +18,15 @@
     list-style: none;
     text-align: center;
     display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+    grid-gap: .5rem;
+    grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
     align-items: center;
     margin-top: 0.5rem;
+    // font-size: 1rem;
 
     a {
       text-decoration: none;
-      padding-top: 0.5rem;
+      padding-top: 0.2rem;
       color: $color-grey-dark-3;
       border-radius: 0.5rem;
 
@@ -36,12 +35,11 @@
       }
 
       &:active .card__icon {
-        font-size: 2rem;
+        font-size: 1rem;
       }
     }
     li {
       p {
-        font-size: 1.5rem;
       }
     }
   }
@@ -70,7 +68,7 @@
   &__facts {
     position: absolute;
     left: 50%;
-    bottom: 2rem;
+    bottom: 1rem;
     transform: translate(-50%, 100%);
     width: 90%;
     background-color: $color-grey-light;
@@ -80,6 +78,10 @@
     padding: 0.5rem;
     overflowy: scroll;
     height: 100%;
+
+    .fact {
+      font-size: 1rem;
+    }
 
     @include respond(tab-port) {
       top: 1rem;

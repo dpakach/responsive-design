@@ -7,13 +7,11 @@
 }
 
 html {
-  font-size: 62.5%;
 }
 
 body {
   box-sizing: border-box;
   background-color: $color-grey-light-1;
-  font-size: 1rem;
   grid-area: body;
 }
 
@@ -33,7 +31,7 @@ main {
 }
 
 .container {
-  max-width: 100rem;
+  //max-width: 100rem;
   overflow: hidden;
   display: grid;
 
@@ -49,7 +47,10 @@ main {
 }
 
 .main-content {
+  margin-bottom: $nav-height;
+  margin-top: 0;
   @include respond(tab-port) {
-    margin-top: calc(8vh);
+    margin-top: $nav-height;
+    margin-bottom: 0;
   }
 }
