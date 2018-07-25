@@ -1,0 +1,49 @@
+.messages {
+  padding: .4rem;
+  border-radius: 4px;
+}
+
+.message {
+  padding: .5rem;
+  border: 1px solid $color-grey-light-3;
+  border-radius: .5rem;
+  padding: 1rem .5rem;
+
+
+  &__main{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    border-bottom: 1px solid $color-grey-light-3;
+    padding-bottom: .5rem;
+  }
+
+  &__tags{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
+  }
+
+  &__tag{
+    background-color: $color-green-light;
+    color: white;
+    margin: .1rem;
+    padding: 0 .5rem;
+    border-radius: .5rem;
+    font-weight: 700;
+  }
+
+  &__text{
+    font-size: 100%;
+
+    @include respond(tab-port){
+      font-size: 120%;
+    }
+  }
+  &__info {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+
+  &:not(:last-child){
+    margin-bottom: 1rem;
+  }
+}
